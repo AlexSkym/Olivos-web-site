@@ -1,0 +1,98 @@
+
+header div{
+
+}
+header div img{
+    margin-right: 1.5%;
+    float: left;
+    width: 30%;
+    height: auto;
+    min-height: 125px;
+    background-repeat: no-repeat;
+}
+header div h2 {
+    width: 65%;
+    align-content: center;
+    float: right;
+    margin: 3px;
+    margin-top: 3%;
+    color: rgb(54, 105, 150);
+}
+h2 {
+    color: rgba(15,156,155,1);
+    font-size: 18px
+}
+.cuerpo7, .cuerpo9{
+    color: rgb(82, 61, 34);
+}
+article .videoElaboracion{
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.videoProductivo{
+    
+    width: 30%;
+    float: left;
+    height: auto;
+}
+.flecha img{
+        width: 5.7%;
+        min-width: 20px;
+        height: 9.6%;
+        min-height: 50px;
+        
+        margin: .3% .5%;
+        position: fixed; 
+        border-radius: 100%;
+        margin: 2px 2px;
+        padding: 3px 3px;
+        border: 5px;
+        border-color: rgb(47, 121, 90);
+        background-color: rgba(159, 212, 212, 0.7);
+        left: 63%;
+        top:78%;
+
+}
+.flecha:hover img {
+    background: rgb(160, 200, 250, 0.7);
+}
+
+                /*****body/cuerpo7*****/
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden; /*oculta las imáges... para que No se vean fuera del cuadro*/
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 15s infinite alternate linear; /*permite cambiar la imagen cada 20segundos, infinitas veces.*/
+    /*animation: alternate;*/ /*permite que animación no vuelva toscamente al inicio.*/
+    animation-timing-function: ease-in;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio {  /*Permite que pueda modificar la animación (anteriormente nombrada "cambio")*/
+    0%  {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}

@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    background: no-repeat;
+}
+body{
+    background-image: url(../images/Bibliografia/fondos/bio1.jpg);
+    
+    min-width: 100vh;
+    padding: 0;
+    margin: 0;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-repeat: repeat-y;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, #52c4df, rgb(140, 95, 146));
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+        /********Encabezado de la Página*******/
+* h1, h2, h3, h4, h5, h6 {
+    background-color: rgba(0, 0, 0, .3);
+    display:block;
+    color: rgb(204, 241, 250);
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-style: solid;
+    margin-left: 2%;
+    
+}
+h1{
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-left: 2%;
+}
+h3{
+    margin: 0;
+    padding: 2%;
+    
+}
+.muestra{
+    width: 100%;
+}
+h4 {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    
+}
+
+.muestra img{
+    display: inline-block;
+
+    width: 25%;
+    max-width: 200px;
+    height: auto;
+    padding: 0;
+    margin-left: 3%;
+}
+
+        /*******El Cuerpo "Main"******/
+* .fotos{
+    display: inline;
+    list-style: none;
+}
+.fotos li {
+    box-sizing: border-box;
+    width: 40%;
+
+    display: inline;
+    float: left;
+    margin: 5% 5%;
+    padding: 15px 20px 20px 10px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .3);
+    border: solid rgba(0, 0, 0, .3); 
+
+    color: beige;
+}
+.fotos li:hover {
+    display: inline;
+    margin: 5% 5%;
+    padding: 15px 20px 20px 10px;
+    text-decoration: none;
+    background-color: rgba(216, 110, 110, 0.3);
+    border: solid black; 
+
+}
+.fotos img {
+    display: inline;
+    float: left;
+    /*clear: both;*/
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+
+}
+
+.fotos p{
+    display: inline-block;
+    position: static;
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+        /********Pié de Página*******/
+footer {
+    background: black;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+}
+footer a{
+    border-color: #e6e6e6;
+    border: 2px 0px;
+    color: rgb(114, 208, 209);
+    
+}
+footer img{
+    width: auto;
+    height: auto;
+}
+footer .Licencia {
+    font-size: 10px;
+    
+}
